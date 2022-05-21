@@ -3,20 +3,20 @@
 # Multi-purpose
 # -------------
 
-alias get_weather='curl wttr.in/Coquitlam'
+alias get_weather="curl wttr.in/${WEATHER_CITY}"
 alias get_ip='ipconfig getifaddr en0'
 
 # Bash Startup
 # ------------
 
-alias re_source='source ~/.zshrc'
-alias edit_source="code ~/.zshrc"
+alias re_source="source ~/${BASH_STARTUP_FILENAME}"
+alias edit_source="code ~/${BASH_STARTUP_FILENAME}"
 alias testing='echo testing'
 
 # Development
 # -----------
 
-alias cd_projects='cd /Users/Hon-Lam/Projects'
+alias cd_projects='cd ~/${PROJECTS_PATH}'
 alias branch_name="git branch | grep \* | cut -d' ' -f 2"
 
 set_upstream() {
